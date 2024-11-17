@@ -5,8 +5,6 @@
 @import "footer.css";
 @import "box.css";
 @import "sign.css";
-@import "dot.css";
-@import "mediaquery.css";
 
 * {
   padding: 0;

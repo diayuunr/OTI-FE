@@ -120,7 +120,7 @@ h3 {
 }
 .projects {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   background-color: #111;
   border: 1px solid #222;

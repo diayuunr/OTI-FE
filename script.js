@@ -95,14 +95,3 @@ closeSignIn.addEventListener("click", function () {
 closeSignUp.addEventListener("click", function () {
   signModal.style.display = "none";
 });
-
-//dot mobile
-const dot = document.getElementById("dot");
-const menu = document.querySelector(".menu");
-const signin = document.querySelector(".signin");
-const signup = document.querySelector(".signup");
-dot.addEventListener("click", function () {
-  menu.classList.toggle("show");
-  signin.classList.toggle("show");
-  signup.classList.toggle("show");
-});
