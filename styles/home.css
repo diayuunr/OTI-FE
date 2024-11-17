@@ -1,0 +1,51 @@
+/*Home*/
+.home {
+  text-align: left;
+  max-width: 100%;
+  padding: 1.5rem 3.5rem;
+  justify-content: center;
+}
+.header1 {
+  margin-top: 60px;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.header1 a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  transition: transform 0.5s ease;
+}
+.header1 a:hover {
+  transform: translateX(30px);
+}
+h1 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  width: 48%;
+}
+.buttons1 {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+.get,
+.more {
+  font-family: "Montserrat";
+  padding: 12px 24px;
+  font-size: 15px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.get {
+  background-color: #fff;
+  color: #000;
+}
+.more {
+  background-color: #333;
+  color: #fff;
+}

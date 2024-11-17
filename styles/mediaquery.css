@@ -1,0 +1,61 @@
+@media (max-width: 758px) {
+  .navbar,
+  .home,
+  .footer {
+    max-width: 100%;
+  }
+  .signin,
+  .signup {
+    visibility: hidden;
+    opacity: 0;
+    gap: 1rem;
+    width: 100%;
+    background-color: #fc941d;
+    color: #000;
+    padding: 2rem;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+  }
+  .signup.show {
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+  }
+  .signin.show {
+    visibility: visible;
+    opacity: 1;
+    left: 0;
+    top: 165px;
+  }
+  .menu {
+    font-size: 30%;
+  }
+  .dot {
+    display: flex;
+  }
+  .cardsBox {
+    grid-template-columns: 1fr;
+  }
+  .cards {
+    flex: 1 1 100%;
+    margin-bottom: 30px;
+    padding: 20px;
+  }
+  .projectBox {
+    grid-template-columns: 1fr;
+  }
+  .projects {
+    grid-template-columns: 1fr;
+    padding: 40px;
+  }
+  .project-card {
+    width: 100%;
+  }
+  .projectTitle {
+    width: 100%;
+  }
+  .button2 {
+    margin-bottom: 15rem;
+  }
+}

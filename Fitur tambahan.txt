@@ -1,0 +1,6 @@
+Fitur tambahan:
+1. Dark mode / light mode. Ketika dark mode tombol akan menjadi ikon moon, Ketika light mode tombol akan switch menjadi ikon sun.
+Dibuat dengan tombol toggle/checkbox dan css, serta javascript untuk switch tombol.
+2. Media query untuk mobile (max-width: 758px)
+3. Box yang akan muncul jika menekan menu contact. Box berisi link linkedin dan Instagram OTI, box akan tertutup jika menekan tombol x.
+4. Form/box yang muncul jika menekan sign in/sign up. Form ini berisi input email dan password.

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTI</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+    
+    <!--Navbar start-->
+    <div class="header">
+      <nav class="navbar">
+        <div class="left">
+          <div class="logo">
+            <a>OmahTI Analytics</a>
+          </div>
+          <ul class="menu">
+            <li><a href="https://omahti.web.id/">Divisions</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="https://omahti.web.id/about-us/">About</a></li>
+            <li><a id="contact">Contact</a></li>
+          </ul>
+          <div id="contactBox" class="contact">
+            <div class="con-content">
+              <span id="closeBtn" class="close-btn">&times;</span>
+              <p><strong>Follow us on:</strong></p>
+              <div class="social-links">
+                <a href="https://www.instagram.com/omahti_ugm/"><i class="bi bi-instagram"></i> Instagram</a>
+                <a href="https://www.linkedin.com/company/omahti/"><i class="bi bi-linkedin"></i> LinkedIn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="navbar-extra">
+            <a class="dot" id="dot"><i class="bi bi-three-dots"></i></a>
+          </div>
+          <div class="mode">
+            <input
+              type="checkbox"
+              id="theme-toggle"
+              onclick="toggleDarkMode()"
+            />
+            <label for="theme-toggle" class="toggle-label">
+              <span class="icon sun"><i class="bi bi-sun-fill"></i></span>
+              <span class="icon moon"><i class="bi bi-moon-fill"></i></span>
+            </label>
+          </div>
+          <div class="buttons">
+            <button class="signin" id="signIn">Sign In</button></a>
+            <button class="signup" id="signUp">Sign Up</button></a>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Sign In -->
+      <div id="signModal" class="sign">
+        <div class="sign-con">
+          <span class="close-btn" id="closeSignIn">&times;</span>
+          <form>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Sign In</button>
+          </form>
+        </div>
+      </div>
+
+      <!--Sign Up-->
+      <div id="signUpModal" class="sign">
+        <div class="sign-con">
+          <span class="close-btn" id="closeSignUp">&times;</span>
+          <form>
+            <label for="emailSignUp">Email:</label>
+            <input type="email" id="emailSignUp" name="email" required>
+            <label for="passwordSignUp">Password:</label>
+            <input type="password" id="passwordSignUp" name="password" required>
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--Navbar end-->
+
+    <!--Home start-->
+    <div class="home">
+      <div class="header1"><a href="https://omahti.web.id/">All OmahTI Divisions &rarr;</a></div>
+      <h1>Get essential insights on OmahTI.</h1>
+      <div class="buttons1">
+        <button class="get">Get Started</button>
+        <button class="more">More Analytics</button>
+      </div>
+    <!--Home end-->
+
+    <!--Cards start-->
+    <div class="cardsBox">
+      <div class="cards">
+        <div class="card"><i class="bi bi-code"></i> Project Tracking</div>
+        <div class="card-title">Monitor progress and contributions across<span> all OmahTI projects.</span></div>
+        <div class="image"><img class="img" src="./images/prj.png"></div>
+        </div>
+      <div class="cards">
+        <div class="card"><i class="bi bi-trophy-fill"></i> Competition Analytics</div>
+        <div class="card-title">Track participation and contributions<span> in IT Competitions.</span></div>
+        <div class="image"><img class="img" src="./images/comp.jpg"></div>
+      </div>
+    </div>
+    <!--Cards end-->
+
+    <!--Project cards start-->
+    <div class="projectBox">
+      <div class="contributors">
+        <h1>Latest projects and winnings by OmahTI divisions.</h1>
+        <p>Contributors:</p>
+        <ul>
+          <li>Andreandhiki Rilyanta</li>
+          <li>Fahmi Shampoerna</li>
+          <li>Daniel Tulung</li>
+          <div class="hidden-contri" id="hiddenContri">
+            <li>Rama Andhika Pratama</li>
+            <li>Muhammad Hanif</li>
+            <li>Wibi Laksono Wijaya</li>
+          </div>
+          <div class="button3">
+            <button class="more-con" id="morecon">+3 More</button>
+          </div>
+        </ul>
+        <div class="ready">
+          <div class="text">
+            <p><a><strong>Ready to share?</strong></a> Start by creating an account.</p>
+            <p>Speak to an <span>expert</span> if you need assistance.</p>
+          </div>
+          <div class="button4">
+            <button class="get">Sign Up</button>
+            <button class="more">Contact</button>
+          </div>
+        </div>
+        </div>
+      <div class="projects">
+        <div class="project-card"><img class="img" src="./images/olc.jpg"><p class="projectTitle">OmahTI Learning Center</p></div>
+        <div class="project-card"><img class="img" src="./images/dataryl.jpg"><p class="projectTitle">Data Royale</p></div>
+        <div class="project-card"><img class="img" src="./images/oem.jpg"><p class="projectTitle">OemOem</p></div>
+        <div class="project-card"><img class="img" src="./images/datathon.jpg"><p class="projectTitle">1st Place Datathon</p></div>
+        <div class="project-card"><img class="img" src="./images/porseni.jpg"><p class="projectTitle">PORSENIGAMA</p></div>
+        <div class="project-card"><img class="img" src="./images/mipa.png"><p class="projectTitle">FMIPA Projects</p></div>
+        <div class="hidden-projects" id="hidden">
+          <div class="project-card"><img class="img" src="./images/malpres.png"><p class="projectTitle">Malpres MIPA</p></div>
+          <div class="project-card"><img class="img" src="./images/feb.png"><p class="projectTitle">FEB UGM's Website</p></div>
+          <div class="project-card"><img class="img" src="./images/oti.jpg"><p class="projectTitle">Kopassus</p></div>
+        </div>
+        <div class="button2">
+          <button class="more" id="more"><i class="bi bi-chevron-down"></i> More</button>
+        </div>
+      </div>
+    </div>
+    <!--Project cards end-->
+
+    <!--Footer start-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="row">
+          <div class="footer-col">
+            <ul>
+              <li><strong>Information</strong></li>
+              <li><a href="https://omahti.web.id/about-us/">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul>
+              <li><strong>Social</strong></li>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="https://www.instagram.com/omahti_ugm/">Instagram</a></li>
+              <li><a href="https://www.linkedin.com/company/omahti/">LinkedIn</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+              <div class="system"><li>All systems normal</li></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--Footer end-->
+    
+  </body>
+</html>

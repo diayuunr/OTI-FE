@@ -1,0 +1,142 @@
+/*Navbar*/
+.navbar {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  background-color: #000;
+  border-bottom: 1px solid #222;
+}
+.logo a {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+.menu li a {
+  font-size: 1rem;
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+.menu li a:hover {
+  color: #fff;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+.signin,
+.signup {
+  font-family: "Montserrat";
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600;
+}
+.signin {
+  background-color: transparent;
+  color: #fff;
+}
+.signup:hover,
+.get:hover {
+  background-color: #696969;
+  color: #fff;
+}
+.signin:hover,
+.more:hover {
+  background-color: #cac9c9;
+  color: #000000;
+}
+.left,
+.right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+/*Light-Dark mode*/
+.mode {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.mode input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.toggle-label {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: background-color 0.2s;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  height: 35px;
+  width: 70px;
+}
+.icon {
+  font-size: 16px;
+  transition: opacity 0.3s ease;
+}
+.sun,
+input:checked + .toggle-label .moon {
+  opacity: 1;
+}
+.moon,
+input:checked + .toggle-label .sun {
+  opacity: 0;
+}
+input:checked + .toggle-label {
+  background-color: #637064;
+}
+body.light-mode,
+.signup {
+  background-color: #ffffff;
+  color: #000000;
+}
+body.dark-mode,
+body.light-mode .more,
+body.light-mode .get:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+body.light-mode .contributors,
+body.light-mode .projects,
+body.light-mode .card-title,
+body.light-mode .ready .text a {
+  color: white;
+}
+body.light-mode .footer .footer-col a,
+body.light-mode .home a {
+  color: #000;
+}
+body.light-mode .get,
+body.light-mode .more:hover {
+  background-color: #bbb4b4;
+  color: #000;
+}
